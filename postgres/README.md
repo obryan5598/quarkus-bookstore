@@ -1,5 +1,5 @@
 # PostgreSQL
 
 ```
-oc new-app postgresql:13~https://github.com/obryan5598/quarkus-bookstore.git#master --name warehouse-dbms --context-dir postgresql/ -e POSTGRESQL_USER=testUser -e POSTGRESQL_DATABASE=warehouse -e POSTGRESQL_PASSWORD='testPassword' --as-deployment-config
+oc new-app postgresql:12~https://github.com/obryan5598/quarkus-bookstore.git#master --name warehouse-dbms --context-dir postgresql/ -e POSTGRESQL_USER=testUser -e POSTGRESQL_DATABASE=warehouse -e POSTGRESQL_PASSWORD='testPassword' --as-deployment-config
 ```
