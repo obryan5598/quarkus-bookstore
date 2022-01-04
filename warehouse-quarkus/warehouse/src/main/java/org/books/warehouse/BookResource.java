@@ -6,7 +6,7 @@ import javax.persistence.Entity;
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 
 import io.quarkus.panache.common.Sort;
-
+import org.jboss.logging.Logger;
 import java.util.List;
 
 import javax.enterprise.context.ApplicationScoped;
