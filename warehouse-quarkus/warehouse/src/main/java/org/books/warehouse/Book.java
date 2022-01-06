@@ -1,24 +1,27 @@
 package org.books.warehouse;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
+import javax.persistence.*;
+import java.util.List;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 
 @Entity
 public class Book extends PanacheEntity {
 
-    @Column(name="ISBN")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    public Long id;
     public String ISBN;
-    @Column(name="TITLE")
     public String title;
-    @Column(name="AUTHOR")
     public String author;
-    @Column(name="PRICE")
     public Long price;
-    @Column(name="QUANTITY")
     public Integer quantity;
 
-    public Book() {}
+    public static List<Book> findByTitle(String title) {
+        return find("title", title).list();
+    }
+
+    public static Book findByISBN(String ISBN) {
+	return find("ISBN", ISBN).firstResult();
+    }
 
 }
