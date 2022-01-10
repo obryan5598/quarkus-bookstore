@@ -9,3 +9,6 @@ oc new-app openshift/postgresql:13-el7~https://github.com/obryan5598/quarkus-boo
 cd warehouse-quarkus/warehouse/
 mvn clean package -DskipTests
 ```
+### Swagger API
+To give a look at the provided APIs please refer to:
+http://your-project.your-cluster/q/swagger-ui/
