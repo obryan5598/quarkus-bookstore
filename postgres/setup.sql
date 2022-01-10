@@ -10,7 +10,7 @@ CREATE TABLE BOOK (     ID SERIAL PRIMARY KEY,
                         PRICE DECIMAL (6,2) NOT NULL,
 			QUANTITY INTEGER NOT NULL);
 
-# For a complete list refer to https://en.wikipedia.org/wiki/List_of_novels_based_on_comics
+/* For a complete list refer to https://en.wikipedia.org/wiki/List_of_novels_based_on_comics */
 
 INSERT INTO BOOK(ISBN, TITLE, AUTHOR, PRICE, QUANTITY) VALUES('9780671820862', 'Captain America: Holocaust For Hire', 'Joseph Silva', 29.90, 20);
 INSERT INTO BOOK(ISBN, TITLE, AUTHOR, PRICE, QUANTITY) VALUES('9780671820855', 'The Incredible Hulk: Cry of the Beast', 'Richard S. Meyers', 24.90, 30);
