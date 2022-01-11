@@ -1,9 +1,10 @@
 # warehouse Project
 
-## Build project & Deploy straight on OCP
-```
+## Build native image & Deploy straight on OCP
+```bash
 cd warehouse-quarkus/warehouse/
 mvn clean package -Pnative -DskipTests
+# Build is made on OCP Cluster
 ```
 
 
