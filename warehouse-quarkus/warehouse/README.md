@@ -1,5 +1,12 @@
 # warehouse Project
 
+## Build project & Deploy straight on OCP
+```
+cd warehouse-quarkus/warehouse/
+mvn clean package -Pnative -DskipTests
+```
+
+
 To know the implemented APIs please refer to http://your-project.your-cluster/q/swagger-ui/
 
 ## Running the application invoking REST API via httpie
