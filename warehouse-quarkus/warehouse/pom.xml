@@ -113,6 +113,11 @@
           </systemPropertyVariables>
         </configuration>
       </plugin>
+      <plugin>
+        <artifactId>openshift-maven-plugin</artifactId>
+        <groupId>org.eclipse.jkube</groupId>
+        <version>${openshift-maven-plugin.version}</version>
+      </plugin>
     </plugins>
   </build>
   <profiles>
